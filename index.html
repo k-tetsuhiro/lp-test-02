@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>フクオカベース - FUKUOKA BASE</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&family=Noto+Sans+JP:wght@400;700;900&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- ナビゲーション -->
+    <nav class="nav" id="nav">
+        <div class="nav-container">
+            <div class="nav-logo" id="navLogo">
+                <span class="logo-text">フクオカベース</span>
+                <span class="logo-subtitle">FUKUOKA BASE</span>
+            </div>
+            <button class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#culture">文化</a></li>
+                <li><a href="#food">グルメ</a></li>
+                <li><a href="#events">イベント</a></li>
+                <li><a href="#spots">スポット</a></li>
+                <li><a href="#news">ニュース</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- ヒーローセクション -->
+    <section class="hero">
+        <div class="hero-background">
+            <div class="hero-shape shape-1"></div>
+            <div class="hero-shape shape-2"></div>
+            <div class="hero-shape shape-3"></div>
+        </div>
+        <div class="hero-content">
+            <h1 class="hero-title">
+                <span class="hero-title-main" data-text="フクオカベース">フクオカベース</span>
+                <span class="hero-title-sub">FUKUOKA BASE</span>
+            </h1>
+            <p class="hero-description">
+                福岡の文化、グルメ、イベント、スポットを発信する<br>
+                あたらしいポータルサイト
+            </p>
+            <div class="hero-scroll">
+                <span>SCROLL</span>
+                <div class="hero-scroll-line"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- カテゴリーカルーセル -->
+    <section class="carousel-section" id="culture">
+        <div class="section-header">
+            <span class="section-number">01</span>
+            <h2 class="section-title">文化 / CULTURE</h2>
+        </div>
+        <div class="carousel">
+            <button class="carousel-btn carousel-btn-prev" data-carousel="culture">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M15 18l-6-6 6-6"/>
+                </svg>
+            </button>
+            <div class="carousel-track-container">
+                <div class="carousel-track" id="cultureTrack">
+                    <div class="carousel-card" style="--accent: #FF3E9D">
+                        <div class="card-image">
+                            <div class="card-image-placeholder" style="background: linear-gradient(135deg, #FF3E9D 0%, #FFE500 100%)"></div>
+                        </div>
+                        <div class="card-content">
+                            <span class="card-category">伝統</span>
+                            <h3 class="card-title">博多祇園山笠</h3>
+                            <p class="card-description">700年以上の歴史を持つ福岡の夏の風物詩</p>
+                        </div>
+                    </div>
+                    <div class="carousel-card" style="--accent: #00D9FF">
+                        <div class="card-image">
+                            <div class="card-image-placeholder" style="background: linear-gradient(135deg, #00D9FF 0%, #B74EFF 100%)"></div>
+                        </div>
+                        <div class="card-content">
+                            <span class="card-category">アート</span>
+                            <h3 class="card-title">福岡市美術館</h3>
+                            <p class="card-description">現代アートから古美術まで幅広いコレクション</p>
+                        </div>
+                    </div>
+                    <div class="carousel-card" style="--accent: #FFE500">
+                        <div class="card-image">
+                            <div class="card-image-placeholder" style="background: linear-gradient(135deg, #FFE500 0%, #FF6B35 100%)"></div>
+                        </div>
+                        <div class="card-content">
+                            <span class="card-category">歴史</span>
+                            <h3 class="card-title">福岡城跡</h3>
+                            <p class="card-description">黒田官兵衛ゆかりの史跡と四季の自然</p>
+                        </div>
+                    </div>
+                    <div class="carousel-card" style="--accent: #00FF88">
+                        <div class="card-image">
+                            <div class="card-image-placeholder" style="background: linear-gradient(135deg, #00FF88 0%, #00D9FF 100%)"></div>
+                        </div>
+                        <div class="card-content">
+                            <span class="card-category">音楽</span>
+                            <h3 class="card-title">福岡ミュージックシーン</h3>
+                            <p class="card-description">多様なジャンルが交差する音楽都市</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-btn carousel-btn-next" data-carousel="culture">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M9 18l6-6-6-6"/>
+                </svg>
+            </button>
+        </div>
+    </section>
+
+    <!-- グルメセクション -->
+    <section class="carousel-section" id="food">
+        <div class="section-header">
+            <span class="section-number">02</span>
+            <h2 class="section-title">グルメ / FOOD</h2>
+        </div>
+        <div class="carousel">
+            <button class="carousel-btn carousel-btn-prev" data-carousel="food">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M15 18l-6-6 6-6"/>
+                </svg>
+            </button>
+            <div class="carousel-track-container">
+                <div class="carousel-track" id="foodTrack">
+                    <div class="carousel-card" style="--accent: #FFE500">
+                        <div class="card-image">
+                            <div class="card-image-placeholder" style="background: linear-gradient(135deg, #FFE500 0%, #FF6B35 100%)"></div>
+                        </div>
+                        <div class="card-content">
+                            <span class="card-category">ラーメン</span>
+                            <h3 class="card-title">博多とんこつラーメン</h3>
+                            <p class="card-description">白濁スープと極細麺が織りなす至極の一杯</p>
+                        </div>
+                    </div>
+                    <div class="carousel-card" style="--accent: #FF6B35">
+                        <div class="card-image">
+                            <div class="card-image-placeholder" style="background: linear-gradient(135deg, #FF6B35 0%, #FF3E9D 100%)"></div>
+                        </div>
+                        <div class="card-content">
+                            <span class="card-category">屋台</span>
+                            <h3 class="card-title">中洲・天神の屋台</h3>
+                            <p class="card-description">夜の街を彩る福岡グルメの原点</p>
+                        </div>
+                    </div>
+                    <div class="carousel-card" style="--accent: #00D9FF">
+                        <div class="card-image">
+                            <div class="card-image-placeholder" style="background: linear-gradient(135deg, #00D9FF 0%, #00FF88 100%)"></div>
+                        </div>
+                        <div class="card-content">
+                            <span class="card-category">海鮮</span>
+                            <h3 class="card-title">玄界灘の魚</h3>
+                            <p class="card-description">朝獲れの新鮮な魚介を堪能</p>
+                        </div>
+                    </div>
+                    <div class="carousel-card" style="--accent: #B74EFF">
+                        <div class="card-image">
+                            <div class="card-image-placeholder" style="background: linear-gradient(135deg, #B74EFF 0%, #FF3E9D 100%)"></div>
+                        </div>
+                        <div class="card-content">
+                            <span class="card-category">スイーツ</span>
+                            <h3 class="card-title">あまおう＆地元スイーツ</h3>
+                            <p class="card-description">福岡発の甘い幸せを召し上がれ</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-btn carousel-btn-next" data-carousel="food">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M9 18l6-6-6-6"/>
+                </svg>
+            </button>
+        </div>
+    </section>
+
+    <!-- イベント＆スポットグリッド -->
+    <section class="grid-section" id="events">
+        <div class="section-header">
+            <span class="section-number">03</span>
+            <h2 class="section-title">イベント / EVENTS</h2>
+        </div>
+        <div class="grid-container">
+            <div class="grid-card grid-card-large" style="--accent: #FF3E9D">
+                <div class="grid-card-image" style="background: linear-gradient(135deg, #FF3E9D 0%, #B74EFF 100%)"></div>
+                <div class="grid-card-content">
+                    <span class="grid-card-date">2025.04.01 - 04.10</span>
+                    <h3 class="grid-card-title">福岡城さくらまつり</h3>
+                    <p class="grid-card-description">桜と夜桜のライトアップが幻想的な春の祭典</p>
+                </div>
+            </div>
+            <div class="grid-card" style="--accent: #FFE500">
+                <div class="grid-card-image" style="background: linear-gradient(135deg, #FFE500 0%, #00FF88 100%)"></div>
+                <div class="grid-card-content">
+                    <span class="grid-card-date">2025.05.15</span>
+                    <h3 class="grid-card-title">博多どんたく港まつり</h3>
+                </div>
+            </div>
+            <div class="grid-card" style="--accent: #00D9FF">
+                <div class="grid-card-image" style="background: linear-gradient(135deg, #00D9FF 0%, #B74EFF 100%)"></div>
+                <div class="grid-card-content">
+                    <span class="grid-card-date">2025.06.20</span>
+                    <h3 class="grid-card-title">福岡ミュージックフェス</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- スポットセクション -->
+    <section class="spots-section" id="spots">
+        <div class="section-header">
+            <span class="section-number">04</span>
+            <h2 class="section-title">スポット / SPOTS</h2>
+        </div>
+        <div class="spots-grid">
+            <div class="spot-item" data-spot="1">
+                <div class="spot-number">01</div>
+                <div class="spot-image" style="background: linear-gradient(135deg, #FF3E9D 0%, #FFE500 100%)"></div>
+                <h3 class="spot-title">大濠公園</h3>
+                <p class="spot-description">都心のオアシス、水辺の憩い</p>
+            </div>
+            <div class="spot-item" data-spot="2">
+                <div class="spot-number">02</div>
+                <div class="spot-image" style="background: linear-gradient(135deg, #00D9FF 0%, #00FF88 100%)"></div>
+                <h3 class="spot-title">糸島エリア</h3>
+                <p class="spot-description">海と山の自然と絶景カフェ</p>
+            </div>
+            <div class="spot-item" data-spot="3">
+                <div class="spot-number">03</div>
+                <div class="spot-image" style="background: linear-gradient(135deg, #B74EFF 0%, #FF3E9D 100%)"></div>
+                <h3 class="spot-title">キャナルシティ</h3>
+                <p class="spot-description">ショッピング＆エンターテイメント</p>
+            </div>
+            <div class="spot-item" data-spot="4">
+                <div class="spot-number">04</div>
+                <div class="spot-image" style="background: linear-gradient(135deg, #FFE500 0%, #FF6B35 100%)"></div>
+                <h3 class="spot-title">博多リバレイン</h3>
+                <p class="spot-description">川沿いの複合施設</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ニュースセクション -->
+    <section class="news-section" id="news">
+        <div class="section-header">
+            <span class="section-number">05</span>
+            <h2 class="section-title">ニュース / NEWS</h2>
+        </div>
+        <div class="news-list">
+            <article class="news-item">
+                <time class="news-date">2025.01.15</time>
+                <span class="news-category" style="--accent: #FF3E9D">文化</span>
+                <h3 class="news-title">新しい福岡市美術館の企画展がスタート</h3>
+            </article>
+            <article class="news-item">
+                <time class="news-date">2025.01.12</time>
+                <span class="news-category" style="--accent: #FFE500">グルメ</span>
+                <h3 class="news-title">博多駅前に新しいラーメン店がオープン</h3>
+            </article>
+            <article class="news-item">
+                <time class="news-date">2025.01.10</time>
+                <span class="news-category" style="--accent: #00D9FF">イベント</span>
+                <h3 class="news-title">春の福岡城さくらまつり開催決定</h3>
+            </article>
+            <article class="news-item">
+                <time class="news-date">2025.01.08</time>
+                <span class="news-category" style="--accent: #00FF88">スポット</span>
+                <h3 class="news-title">糸島に新しいカフェがオープン予定</h3>
+            </article>
+        </div>
+    </section>
+
+    <!-- フッター -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <span class="logo-text">フクオカベース</span>
+                <span class="logo-subtitle">FUKUOKA BASE</span>
+            </div>
+            <div class="footer-links">
+                <a href="#culture">文化</a>
+                <a href="#food">グルメ</a>
+                <a href="#events">イベント</a>
+                <a href="#spots">スポット</a>
+                <a href="#news">ニュース</a>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 FUKUOKA BASE. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
